@@ -1,0 +1,32 @@
+% include("_header.html", title="Items")
+<main class="">
+  <div
+    id="users "
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 mt-4"
+  >
+    % for user in users:
+    <div
+      class="border border-gray-700 relative flex flex-col"
+      id="user_{{user['user_pk']}}"
+    >
+      <div
+        href="/users/{{user}}"
+        class="flex items-center justify-center flex-col py-4 text-center"
+      >
+        {{user["user_name"]}}
+        <!-- <span class="text-3xl text-sky-500 font-extrabold">{{user["user_pk"]}}</span> -->
+      </div>
+      <!-- <a
+        href="/delete-user/{{user['user_pk']}}"
+        class="text-3xl absolute bottom-2 right-2"
+      >
+        🗑️</a
+      > -->
+
+      <button mix-delete="/users/{{user['user_pk']}}">🗑️</button>
+    </div>
+
+    % end
+  </div>
+</main>
+%include("_footer.html")

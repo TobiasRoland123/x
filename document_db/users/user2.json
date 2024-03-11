@@ -1,0 +1,12 @@
+{
+  "id": "2",
+  "name": "Santiago",
+  "roles": ["teacher"],
+  "teachers": [],
+  "students": [
+    {
+      "id": "1",
+      "name": "Filip"
+    }
+  ]
+}

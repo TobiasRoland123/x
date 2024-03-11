@@ -1,0 +1,22 @@
+{
+  "id": "1",
+  "version": "1",
+  "name": "Filip",
+  "liked_products": [
+    {
+      "id": "p1",
+      "name": "t-shirt",
+      "price": 10.1
+    }
+  ],
+  "bought_products": [
+    {
+      "id": "p1",
+      "version": "1",
+      "name": "t-shirt",
+      "price": 10.1,
+      "bought_at": 12329338,
+      "returned_at": null
+    }
+  ]
+}

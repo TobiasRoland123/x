@@ -1,0 +1,20 @@
+{
+  "id": "1",
+  "version": 1,
+  "name": "Filip",
+  "bookings": [
+    {
+      "id": "1",
+      "version": 1,
+      "name": "villa",
+      "canceled_at": null,
+      "number_of_nights": 3,
+      "start_at": 12329338,
+      "end_at": 15329338,
+      "price_per_night": 1000000,
+      "discount": 1000,
+      "paid_price": 2997000,
+      "paid_at": 12329338
+    }
+  ]
+}

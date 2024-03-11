@@ -1,0 +1,21 @@
+{
+  "id": "p1",
+  "version": "1",
+  "name": "t-shirt",
+  "price": 10.1,
+  "liked_by_users": [
+    {
+      "id": "1",
+      "name": "Filip"
+    }
+  ],
+  "bought_by": [
+    {
+      "id": "1",
+      "name": "Filip",
+      "version": "1",
+      "bought_at": 12329338,
+      "returned_at": null
+    }
+  ]
+}

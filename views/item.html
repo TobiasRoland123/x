@@ -1,0 +1,30 @@
+% include("_header.html", title=title)
+<main>
+  <h1 class="text-3xl text-pink-400">Item ID: {{id}}</h1>
+
+  <form id="item-frm">
+    <label for="item_name">Item name</label>
+    <input
+      type="text"
+      id="item_name"
+      name="item_name"
+      value="{{item_name}}"
+    />
+
+    <label for="item_price">Item price</label>
+    <input
+      type="text"
+      id="item_price"
+      name="item_price"
+      value="{{item_price}}"
+    />
+
+    <button
+      mix-data="#item-frm"
+      mix-put="/items/{id}"
+    >
+      Update user
+    </button>
+  </form>
+</main>
+%include("_footer.html")

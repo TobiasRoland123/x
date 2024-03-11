@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="/app.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <script
+      src="/mixhtml.js"
+      defer
+    ></script>
+    <title>{{ get('title', 'xxx') }}</title>
+    <style>
+      .mix-error {
+        background-color: red;
+      }
+      .mix-hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="w-full h-svh bg-slate-400">
+    <nav class="w-full h-16 bg-sky-700 text-neutral-100 flex gap-6 items-center px-12">
+      <a
+        href="/"
+        class="text-xl5 rounded-md animate-bounce border border-black bg-neutral-500 px-4 py-2"
+        >Ho <span class="inline-block animate-spin">m</span>e</a
+      >
+
+      <div class="mx-auto flex gap-4">
+        <a href="/signup">Signup</a>
+        <a href="/login">Login</a>
+        <a href="/items">Items</a>
+        <a href="/users">Users</a>
+      </div>
+
+      <button class="text-pink-900">x</button>
+    </nav>
+
+</html>

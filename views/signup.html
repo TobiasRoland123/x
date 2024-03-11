@@ -1,0 +1,42 @@
+% include("_header.html" ,title="Signup") 
+%import x
+
+<main>
+  <form id="frm_signup">
+    <div id="message"></div>
+    <div>
+      <label for="email">Email</label>
+      <input
+        type="text"
+        name="user_email"
+        mix-check="{{x.USER_EMAIL_REGEX}}"
+      />
+    </div>
+    <div>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="user_name"
+        mix-check="{{x.USER_NAME_REGEX}}"
+      />
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input
+        type="text"
+        password="user_password"
+        mix-check="{{x.USER_PASSWORD_REGEX}}"
+      />
+    </div>
+
+    <button
+      type="button"
+      mix-post="/signup"
+      mix-data="#frm_signup"
+    >
+      Signup
+    </button>
+  </form>
+</main>
+%include("_footer.html")

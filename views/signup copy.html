@@ -1,0 +1,39 @@
+% include("_header.html" ,title="Signup")
+
+<main>
+  <form
+    id="signup-frm"
+    method="POST"
+  >
+    <label for="user_name">User name</label>
+    <input
+      class="border border-gray-400"
+      type="text"
+      placeholder="Username"
+      name="user_name"
+    />
+    <label for="user_email">User email</label>
+    <input
+      class="border border-gray-400"
+      type="text"
+      placeholder="Email"
+      name="user_email"
+    />
+    <label for="user_password">password name</label>
+    <input
+      class="border border-gray-400"
+      type="text"
+      placeholder="password"
+      name="user_password"
+    />
+
+    <button
+      class="bg-green-800 px-2 py-1"
+      mix-data="#signup-frm"
+      mix-post="/users"
+    >
+      Save
+    </button>
+  </form>
+</main>
+%include("_footer.html")
