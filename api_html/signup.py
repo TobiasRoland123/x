@@ -59,6 +59,7 @@ def _():
             """
         
         if "user_password" in str(ex):
+            print("password error:",ex)
             return """
             <template mix-target="#message">
             <div id="message">
